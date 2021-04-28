@@ -18,22 +18,22 @@ function Api(){
     }, [])
     return (
         <>
-            <table>
+            <table className={styles.table_default}>
                 <tbody>
                 {
                     _map(studentDetails, ({name, id, role, iterationId}) => {
                         return (
                             <tr className={styles.table_row}>
-                                <td>
+                                <td className={styles.table_row}>
                                     {id}
                                 </td>
-                                <td>
+                                <td className={styles.table_row}>
                                     {name}
                                 </td>
-                                <td>
+                                <td className={styles.table_row}>
                                     {role}
                                 </td>
-                                <td>
+                                <td className={styles.table_row}>
                                     {iterationId}
                                 </td>
                             </tr>
@@ -45,4 +45,6 @@ function Api(){
         </>
     )
 }
+
+
 export default Api;
